@@ -11,14 +11,18 @@ public class CheckingAccount extends BankAccount{
     }
 
     @Override
-    public void withdraw (double amount) {
-        if (this.Withdraw>this.Balance);
-            {
-        Balance = Balance - amount;
-        Balance = Balance - 25;
+    public void withdraw (double amount){
+        if (amount>this.Balance){
+        Balance -= amount;
+        Balance -= 25;
         System.out.println("Overdraft fee of $25 applied!");
+
+            }//end of if statement
+            else {
+            this.Balance -= amount;
+        } ////end of else statement
 
     }
 }
-    }
+
 

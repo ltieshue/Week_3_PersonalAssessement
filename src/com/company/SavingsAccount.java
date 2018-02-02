@@ -9,7 +9,7 @@ public class SavingsAccount extends BankAccount{
        SavingsAccount.this.withdraw(550);
 
         System.out.println(
-               "Savings Account/Deposit: $ " + this.Deposit + ": Withdraw: $ " + this.Withdraw + ": New Balance: $" + this.Balance);
+               "Savings Account/Deposit: $ " + this.Deposit + ": Withdraw: $ " + this.Withdraw + ": New Balance: $" + this.Balance );
 
     }
 
